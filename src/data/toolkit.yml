@@ -1,8 +1,15 @@
 colors:
-  primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+  base:
+    cream-light: "#FAFAF8"
+    cream-dark: "#EFF0EC"
+    grey-light: "#A1A0A0"
+    grey-medium: "#969496"
+    grey-dark: "#808080"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    teal-light: "#63A4A3"
+    teal-dark: "#5BA5A4"
+    green-light: "#3FA75F"
+    red-light: "#DB423C"
+    yellow-light: "#D2C93B"
+    yellow-dark: "#CDBC2C"
+
