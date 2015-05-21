@@ -34,8 +34,8 @@ fabricator: true
 
 <h2>Font sizes</h2>
 {{#each toolkit.fontsizes}}
-  <div class="">
-    <div class=""><strong>${{@key}}</strong> {{this}}</div>
+  <div style="font-size:{{this}}">
+    <div class=""><strong>${{@key}}</strong> <span>{{this}}</span></div>
   </div>
 {{/each}}
 
