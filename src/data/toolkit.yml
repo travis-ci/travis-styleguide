@@ -12,4 +12,9 @@ colors:
     red-light: "#DB423C"
     yellow-light: "#D2C93B"
     yellow-dark: "#CDBC2C"
-
+fontsizes:
+  font-size-s: "14px"
+  font-size-sm: "16px"
+  font-size-m: "18px"
+  font-size-ml: "22px"
+  font-size-l: "36px"
