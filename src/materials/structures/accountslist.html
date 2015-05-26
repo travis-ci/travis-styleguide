@@ -1,0 +1,22 @@
+<section class="profile-orgs">
+  <h1>Organizations</h1>
+  <ul id="accounts" class="accounts-list">
+    <% orgs.each do |owner| %>
+      <%=  %>
+      <li class="accounts-item <%= owner.class.name.underscore %> <%= 'selected' if owner.login == self.owner.login %> <%= 'active' if owner.subscribed? or Travis::Github::Education.active?(owner) %> <%= 'education' if Travis::Github::Education.active?(owner) %>" title="GitHub account <%= owner.login %>">
+        <%= link_to subscription_path(owner_id(owner)) do %>
+         <div class="media">
+            <div class="media-elem">
+              <img src="<%= avatar_url(owner,50) %>" width="50px" height="50px" class="owner-github-gravatar-small"/>
+            </div>
+            <div class="media-body">
+              <div class="subscription-status"></div>
+              <h2><%= owner.name.present? ? owner.name : owner.login %></h2>
+              <p><strong><%= number_of_repos(owner.login) %></strong> Repositories</p>
+            </div>
+          </div>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>

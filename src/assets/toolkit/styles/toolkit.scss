@@ -2,11 +2,13 @@
  * Toolkit styles
  */
 
-// @import url(http://localhost:4200/assets/travis.css);
+// @import url(http://localhost:4200/assets/travis.css)
 
 @import "elements/typography";
 @import "elements/forms";
 @import "elements/code";
+@import "modules/media";
+@import "modules/accounts";
 
 
 *, *:before, *:after {
