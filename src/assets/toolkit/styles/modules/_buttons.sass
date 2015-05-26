@@ -1,0 +1,74 @@
+
+.button
+  position: relative
+  display: inline-block
+  margin: 0
+  padding: 5px 10px
+  overflow: visible
+  border: none
+  border-radius: 4px
+  background-clip: padding-box
+  background-color: #696867
+  color: $white
+  font-family: 'Source Sans Pro'
+  font-size: $font-size-s
+  font-weight: normal
+  text-decoration: none
+  text-align: center
+  white-space: nowrap
+  cursor: pointer
+  outline: none
+  &:hover,
+  &:active
+    background-color: lighten(#696867, 10)
+  &:focus
+    background-color: #696867
+
+.button--green
+  background-color: $green-dark
+  &:focus,
+  &:active,
+  &:hover
+    background-color: $green-light
+
+.button--red,
+  background-color: $red-dark
+  &:focus,
+  &:active,
+  &:hover
+    background-color: $red-light
+
+
+%icon
+  display: inline-block
+  margin-right: .5em
+  vertical-align: middle
+  background:
+    size: 100%
+    repeat: no-repeat
+
+.icon-sync
+  @extend %icon
+  width: .9em
+  height: 1.3em
+  background-image: url('../images/sync-account-icon.svg')
+
+.icon-download-log
+  @extend %icon
+  width: 1.2em
+  height: 1.2em
+  background-image: url('../images/download-log-icon.svg')
+.icon-remove-log
+  @extend %icon
+  width: 1.2em
+  height: 1.2em
+  background-image: url('../images/remove-log-icon.svg')
+
+.button--round
+  width: 1.7rem
+  height: 1.7rem
+  padding: 0
+  border-radius: 50%
+  *
+    margin: auto
+
