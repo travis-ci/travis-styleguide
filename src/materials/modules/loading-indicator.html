@@ -1,0 +1,17 @@
+---
+notes: |
+  The loading indicator has its own ember component `loading-indicator`.<br>
+  To center is you can give the component the `center=true` flag which adds an extra class.<br>
+  You can use the a white version of the indicator within buttons or other elements.
+---
+<div>
+  <span class="loading-indicator"><i></i><i></i><i></i></span>
+</div>
+
+<div class="loading-container">
+  <span class="loading-indicator"><i></i><i></i><i></i></span>
+</div>
+
+<button type="button" class="button">
+  <span class="loading-indicator--white"><i></i><i></i><i></i></span> syncing
+</button>
