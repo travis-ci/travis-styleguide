@@ -6,9 +6,9 @@
   "main": "README.md",
   "scripts": {
     "gulp": "gulp",
-    "prestart": "npm install",
     "build": "npm install && gulp",
-    "start": "gulp --dev",
+    "prestart": "gulp",
+    "postinstall": "gulp default",
     "test": "npm run build"
   },
   "keywords": [

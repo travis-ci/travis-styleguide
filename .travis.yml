@@ -1,4 +1,13 @@
 language: node_js
 
 node_js:
-  - "0.10"
+  - '0.10'
+deploy:
+  provider: divshot
+  environment:
+    master: development
+    staging: staging
+    production: production
+  skip_cleanup: true
+  api_key:
+    secure: MAFx5hcuv8qS5zTuEr+gr33SKo71vgd9WZSTD4LcBtX6EfO0yEvsmw786HuztwFN7frVcTBYTHXTiLES7ijHpue/pRDrWeGf01MYKUo2rw1Gsgfex1+P8yakTxpBShU62DLYPb01kHBAwpATG8XOSl/Mjkqq5VLQ4nuRK0J/Me3sNsV5p5vuEBkX+P7uH0RiXY+jDQSE8/bzBAR70TZ3DgiO/d7KqfmJGHuu6UAhmm+cDR/iAjHxBK3mONAyLMWfBAtEAmxcH5qOZ2B6uCLNX0NivHufBCXA6fYCaNhMbVgAOTcxkRKhwl8J76zkQeSpIlTnFZmPGVchh9EvFEvnK1fTbo9uo6SYdprHDydgr7BkUuD/tZ/2PCpkXQrX/5Eh5blRgrZY0u/3Yr/eQyFJCvYoXw/d11eOaueeFfuFODB43cQR338aDXSMr7IrUYkXkURmbagfjJdt8KGfhQvFJEQdzXuh2tm3R8erVQZa3SCTUr32LrUwE3y8mdv0Aew4volEUh61a+SO5L0hWPCfhwRvTsRqSvRn4Y9f6dhdx9I6VxIPpXHt1+UWFjQaqKGrL0YYSwts9S5p4ADeSr+nZnxQpyiRfp5AQo1RfceRMenM9ZuWAhlzEuBrUyhRKXYRvaXyrGCeTIDvDzGELSmbXpRBUvnlb5eCH/b2gnwGWOg=
