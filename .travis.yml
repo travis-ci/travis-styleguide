@@ -8,3 +8,4 @@ deploy:
   provider: divshot
   api_key: $DIVSHOT_API_KEY
   environment: production
+  skip_cleanup: true
