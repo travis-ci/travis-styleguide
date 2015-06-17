@@ -1,0 +1,56 @@
+$image-path: '../images/icons/'
+
+%icon
+  display: inline-block
+  margin-right: .4em
+  vertical-align: middle
+  background:
+    repeat: no-repeat
+    size: 100%
+    position: 0 0
+
+.icon-amount
+  @extend %icon
+  width: .6em
+  height: 1em
+  background-image: url('#{$image-path}icon-invoice-amount.svg')
+.icon-amount_document
+  @extend %icon
+  width: 1em
+  height: 1.3em
+  background-image: url('#{$image-path}icon-invoice-list.svg')
+.icon-pdf
+  @extend %icon
+  width: 1em
+  height: 1.4em
+  background-image: url('#{$image-path}icon-pdf.svg')
+.icon-back_arrow
+  @extend %icon
+  width: .9em
+  height: 1.3em
+  background-image: url('#{$image-path}icon-back-to-subscriptions.svg')
+.icon-sync
+  @extend %icon
+  width: .9em
+  height: 1.3em
+  background-image: url('#{$image-path}sync-account-icon.svg')
+.icon-download-log
+  @extend %icon
+  width: 1.2em
+  height: 1.2em
+  background-image: url('#{$image-path}download-log-icon.svg')
+.icon-remove-log
+  @extend %icon
+  width: 1.2em
+  height: 1.2em
+  background-image: url('#{$image-path}remove-log-icon.svg')
+.icon-hashmark
+  @extend %icon
+  width: 1em
+  height: 1em
+  background-image: url('#{$image-path}build-number-icon.svg')
+.icon-calendar
+  @extend %icon
+  width: 1em
+  height: 1.1em
+  background-image: url('#{$image-path}finished-icon.svg')

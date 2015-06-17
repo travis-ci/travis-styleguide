@@ -4,9 +4,11 @@
 
 // @import url(http://localhost:4200/assets/travis.css)
 
+@import "foundation/scss/foundation";
 @import "elements/typography";
 @import "elements/forms";
 @import "elements/code";
+@import "modules/icons";
 @import "modules/media";
 @import "modules/accounts";
 @import "modules/buttons";
