@@ -16,6 +16,11 @@ icons:
   amount_document: 'icon-invoice-list.svg'
   pdf: 'icon-pdf.svg'
   back_arrow: 'icon-back-to-subscriptions.svg'
+  key: ''
+  fingerprint: ''
+  trash: ''
+  trash_disabled: ''
+  lock: ''
 states:
   passed: ''
   failed: ''

@@ -54,3 +54,9 @@ $image-path: '../images/icons/'
   width: 1em
   height: 1.1em
   background-image: url('#{$image-path}finished-icon.svg')
+%icon-hook-on
+  @extend %icon
+  background-image: url('#{$image-path}hooks-on.svg')
+%icon-hook-off
+  @extend %icon
+  background-image: url('#{$image-path}hooks-off.svg')
