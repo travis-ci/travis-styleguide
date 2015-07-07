@@ -1,0 +1,35 @@
+
+.tooltip
+  position: relative
+  display: inline-block
+
+  &:hover
+    .tooltip-bubble
+      display: block
+
+.tooltip-bubble
+  position: absolute
+  top: -2.3em
+  width: auto
+  height: 2em
+  margin: auto
+  padding: .2em .8em .3em
+  z-index: 5
+  background-color: #818383
+  border-radius: 4px
+  color: $white
+  text-align: center
+  white-space: nowrap
+
+  display: none
+
+  &:before
+    content: ""
+    position: absolute
+    bottom: -0.3em
+    left: 39%
+    width: 1em
+    height: 1em
+    transform: rotate(45deg)
+    z-index: -1
+    background-color: #818383
