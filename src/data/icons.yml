@@ -21,6 +21,7 @@ icons:
   trash: ''
   trash_disabled: ''
   lock: ''
+  flag: 'notice-flag.svg'
 states:
   passed: ''
   failed: ''

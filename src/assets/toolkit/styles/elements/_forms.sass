@@ -1,23 +1,20 @@
-// fieldset,
-// legend
-//   margin: 0
 
-// fieldset
-//   border: none
-//   margin-bottom: 3rem
-
-// legend
-//   margin: 0 0 .8em
-
-
-input[type=text],
-select,
-textarea
+%input-base
   display: inline-block
   width: 100%
-  padding: .3em .5em .3em
-  font-family: 'Source Sans Pro', Helvetica, sans-serif
-  font-size: $font-size-s
-  border: solid 1px $grey-medium
-  color: $grey-dark
+  padding: .4em .4em
+  border: 1px solid #eeedec
   border-radius: 4px
+  color: #8e8f8e
+  font-size: $font-size-sm
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]
+  @extend %input-base
+  height: 32px
+
+textarea,
+select
+  @extend %input-base
