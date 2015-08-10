@@ -1,0 +1,79 @@
+
+%one-line
+  font-size: 16px
+  font-weight: 400
+  vertical-align: middle
+  margin: 0
+  *
+    display: inline-block
+    font-size: inherit
+    font-weight: 400
+    vertical-align: middle
+    margin: 0
+    padding: 0
+    line-height: 1
+
+@mixin statusColors($color, $status)
+  &.#{$status}
+    background: linear-gradient(to right, $color 0%, $color 9px, transparent 10px, transparent 100%);
+    .build a,
+    .repo-title a
+      color: $color
+      &:hover
+        border-color: $color
+    .build-status
+      color: $color
+    .status-icon
+      background-color: $color
+
+
+.owner-tile
+
+  border: #F2F0F0 solid 1px
+  display: flex
+  flex-direction: row
+  flex-flow: space-between
+  align-items: center
+  height: 3.4em
+  margin-bottom: .5em
+
+  a
+    text-decoration: none
+    color: $grey-dark
+    &:hover
+      span
+        text-decoration: underline
+
+  .repo
+    @extend %one-line
+    width: grid-calc(4, 12)
+    margin-left: 2em
+
+  .status-icon,
+  .icon-branch,
+  .icon-calendar,
+  .icon-hash,
+  .icon-github
+    width: 1em
+    height: 1em
+    margin-right: .5em
+    background-color: $grey-dark
+
+  .build
+    @extend %one-line
+    width: grid-calc(2, 12)
+
+  .branch
+    @extend %one-line
+    width: grid-calc(2, 12)
+
+  .commit
+    @extend %one-line
+    width: grid-calc(2, 12)
+
+  .duration
+    @extend %one-line
+    width: grid-calc(4, 12)
+
+  @include statusColors($green-dark, 'passed')
+  @include statusColors($red-dark, 'failed')

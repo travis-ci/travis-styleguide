@@ -22,6 +22,8 @@
 @import "modules/tooltips";
 @import "modules/notice";
 
+@import "modules/owner-tile";
+
 
 *, *:before, *:after {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -29,6 +31,7 @@
 }
 
 html, body {
+  // text-rendering: optimizeLegibility;
   box-sizing: border-box;
   font-size: 16px;
   color: $grey-dark;
