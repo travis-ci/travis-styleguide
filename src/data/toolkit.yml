@@ -1,4 +1,23 @@
 colors:
+  builds:
+    passing: "#44A662"
+    failing: "#D94341"
+    canceled: "#F5F5F5"
+    booting: ""
+  alerts:
+    success-font: "#44A662"
+    success-bg: "#F5FBF6"
+    error-font: "#D94341"
+    error-bg: "#FFF7F5"
+    warning-font: ""
+    warning-bg: ""
+    notice-font: ""
+    notice-bg: ""
+  layouts:
+    teal: "#5BA5A4"
+    grey-light: "#F7F7F7"
+    grey-medium: ""
+    grey-dark: ""
   base:
     cream-light: "#FAFAF8"
     cream-dark: "#EFF0EC"
