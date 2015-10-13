@@ -2,13 +2,13 @@ colors:
   builds:
     passing: "#44A662"
     failing: "#D94341"
-    canceled: "#F5F5F5"
-    booting: ""
+    canceled: "#CACECE"
+    booting: "#E5DA3F"
   alerts:
     success-font: "#44A662"
-    success-bg: "#F5FBF6"
-    error-font: "#D94341"
-    error-bg: "#FFF7F5"
+    success-bg: "#3FA75F"
+    error-font: "#DB423C"
+    error-bg: "#DB423C"
     warning-font: ""
     warning-bg: ""
     notice-font: ""
