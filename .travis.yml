@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- '0.10'
-before_deploy: 
+- '4.8.4'
+before_deploy:
   - ls $TRAVIS_BUILD_DIR
   - pwd
 deploy:
